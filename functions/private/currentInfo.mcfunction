@@ -1,0 +1,1 @@
+tellraw @s {"rawtext":[{"text":"§2Number of bounces §a"},{"score":{"name":"minecraft:snowball","objective":"bouncy"}},{"text":"§2  throwing power §a"},{"score":{"name":"minecraft:snowball","objective":"powerMultiplier"}},{"text":"%"}]}
