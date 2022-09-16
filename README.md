@@ -1,7 +1,7 @@
 # Bouncy-Snowballs
 ### How do they download this minecraft pack?
 Just click on this link: *no ads also*
- - [Bouncy Snowballs v1.0.0.mcpack](https://github.com/Addon-Bedrock-Projecects/Bouncy-SnowBalls/releases/download/prerelease/Bouncy.SnowBalls-v1.0.0.mcpack)
+ - [Bouncy Snowballs v1.2.0.mcpack](https://github.com/Addon-Bedrock-Projecects/Bouncy-SnowBalls/releases/download/stable/Bouncy.Snowballs.v1.2.0.mcpack)
 
 ### Setup tutorial:
 When u creating your new world enable Gametest Framework Experiments! or your snowballs won't bounce.
