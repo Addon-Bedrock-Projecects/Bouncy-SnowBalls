@@ -62,3 +62,32 @@ EventRegister.registry('Projectiles',{
         }
     }
 });
+
+function* loadScores(){
+    const objectives = scoreboard.getObjectives();
+    let objs = [...obvNames];
+    for(const obv of objectives){
+        yield;
+        const id = obv.id;
+        if(obvNames.includes(id)){
+            objs = objs.filter(n=>n!==id);
+            const map = new Map();
+            for (const pls of obv.getParticipants().filter(p=>p.type==ScoreboardIdentityType.fakePlayer)) {
+                yield;
+                map.set(pls.displayName,obv.getScore(pls));
+            }
+            settings[id] = map;
+        }
+    }
+    if(objs.length>0){
+        for (const n of objs) {
+            const obv = scoreboard.addObjective(n,'');
+            const map = new Map();
+            for (const pls of obv.getParticipants().filter(p=>p.type==ScoreboardIdentityType.fakePlayer)) {
+                yield;
+                map.set(pls.displayName,obv.getScore(pls));
+            }
+            settings[obv.id] = map;
+        }
+    }
+}

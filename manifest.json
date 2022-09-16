@@ -4,7 +4,7 @@
 		"name": "§5Bouncy Snowballs",
 		"description": "Addon created by ConMaster2112.   Require: Gametest Experiments     How to setup: Use /function info to get more info.",
 		"uuid": "dbf6bd73-7dd0-4963-ae2b-af2fe1ef1115",
-		"version": [1,1,0],
+		"version": [1,2,0],
 		"min_engine_version": [1,19,0]
 	},
 	"modules": [
